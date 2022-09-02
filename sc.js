@@ -1,16 +1,11 @@
-var a=0
-var tdat=document.getElementById("txt")
-function f1(){
-a++
-tdat.innerHTML=a
-}
+let divs=document.querySelectorAll(".co");
+divs.forEach(x=>{
+    x.addEventListener("click",function(){
+    let nam=x.className
+    let tdat=document.getElementById("txt")
+    tdat.innerHTML=nam.substring(3)
+    tdat.style.backgroundColor=nam.substring(3)
+    tdat.style.color="white"
+    })
 
-function f2(){
-    a--
-    tdat.innerHTML=a
-}
-
-function f3(){
-    a=0
-    tdat.innerHTML=a
-}
+})

@@ -1,0 +1,11 @@
+.ro{
+    display: flex;
+    justify-content: center;
+
+}
+.co{
+   padding: 80px;
+}
+.t{
+    font-size: 30px;
+}
